@@ -1,0 +1,286 @@
+*{
+    margin: 0px;
+    padding:0px;
+    box-sizing: border-box;
+
+}
+:root{
+    --main-bg: #1e272e;
+    --main-color: #0097e6;
+}
+html{
+    
+    font-size: 62.5%;
+}
+body{
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+   
+}
+.row{
+    margin:0;
+}
+.main_menu{
+    background-color: var(--main-bg);
+}
+.navbar{
+    background-color: var(--main-bg);
+    padding: 1rem 0;
+
+}
+.navbar a {
+ color: #fff;
+ font-size: 1.8rem;
+}
+.navbar a:hover{
+   color: var(--main-color);
+}
+.nav-item{
+     margin: 0rem 1rem 0rem 1rem;
+}
+
+.fa-umbrella{
+    transition: all linear;
+    animation : rot 3s linear infinite;
+    color: var(--main-color);
+}
+@keyframes rot{
+    0%{
+           transform: rotate(0deg);
+     }
+     100%{
+         transform : rotate(360deg);
+     }
+
+}
+.main_header_left{
+    height: 50rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+
+}
+.main_header_left p{
+font-size: 3.5rem;
+margin: 1rem 0;
+}
+.main_header_left h1{
+    font-size: 3.5rem;
+    margin: 1rem 0 4rem;
+    text-transform: capitalize;
+ }
+ .main_header_left .button{
+    border: none;
+    outline : none;
+    padding: 0.8rem  1.8rem;
+    border-radius : 2rem;
+    text-transform: uppercase;
+    box-shadow: 0 8px 6px -6px #000  ;
+    
+}
+.main_header_left .button:hover{
+    outline: none;
+    box-shadow: 0 8px 6px -6px var(--main-color);
+    
+}
+
+ .main_header_right{
+    height: 50rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+
+}   
+
+
+.footer{
+    width: 100%;
+    background-color: var(--main-bg);
+    margin-top:auto;
+    
+}
+.footer p{
+    margin: 0;
+    text-align: center;
+    color: #fff;
+    line-height: 5rem;
+    font-size: 2rem;
+}
+/* .main_header_left figure img {
+    filter: drop-shadow(0 0.5rem 1rem rgba(0,0,0,0.3));
+} */
+.main_header_right img{
+   
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+/* 
+
+weather style */
+
+.tempForm{
+    width:60%;
+    position: relative;
+    margin: 4rem auto 5rem;
+}
+.tempForm input[type='text']{
+    width: 100%;
+    padding: 2rem 5rem 2rem 2rem;
+    background-color: #0091d8;
+    outline: none;
+    border:none;
+    border-radius: 3rem;
+    color:white;
+    font-size: 1.6rem;
+
+}
+::placeholder{
+    color:#bfc1c8;
+}
+.tempForm input[type='submit']{
+   position: absolute;
+   top:5px;
+   right: 5px;
+   bottom:5px;
+   border:none;
+   background-color: #009ad8;
+   padding:0 3rem;
+   border-radius: 3rem;
+   color:white;
+   font-size: 1.6rem;
+
+}
+
+.tempForm input[type='submit']:hover{
+    color:#0091d8;
+    background-color: #fff;
+}
+.TempInfo{
+    width:30rem;
+    margin:auto;
+    margin-bottom: 2rem;
+    min-width: 20rem;
+    background-color:  #323544;
+    border-radius: 1rem;
+    font-family: 'Roboto',sans-serif;
+}
+.topLayer{
+    width: 100%;
+    height: 20%;
+    background-color: #323544;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-radius: 1rem;
+   
+}
+.topLayer p{
+    color: #fff;
+    font-weight: 300;
+    padding: 4rem;
+
+}
+.mainLayer{
+    width:100%;
+    height: 40%;
+    display: flex;
+    flex-direction:column;
+    padding: 2rem;
+    
+}
+.mainLayer #cityName{
+    padding: 2rem 0;
+    color: #bfc1c8;
+    font-weight: 300;
+    font-size:2rem;
+
+}
+.mainLayer .middleLayer{
+    display: flex;
+    justify-content: space-around;
+    color:#fff;
+    
+}
+.mainLayer .middleLayer p,
+.mainLayer .middleLayer .fa{
+    font-size: 3rem;
+    font-weight: 900;
+}
+.fa{
+    color:#009ad8;
+    margin: 0.5rem;
+
+}
+.sup{
+    font-size: 6rem;
+    margin-top: -2rem;
+}
+.data_hide{
+    visibility: hidden;
+    transition: all 0.3s linear;
+}
+
+
+@media (max-width:768px){
+    .main_header_left{
+        height: auto;
+        margin: 5rem 0;
+    }
+    
+    .main_header_right{
+        height: auto;
+        margin: 5rem 0;
+    }
+    .TempInfo{
+        width:30rem;
+        margin:auto;
+        margin-top: -4rem;
+        margin-bottom: 2rem;
+        min-width: 20rem;
+        background-color:  #323544;
+        border-radius: 1rem;
+        font-family: 'Roboto',sans-serif;
+    }
+    .tempForm input[type='text']{
+        width: 100%;
+        padding: 2rem 5rem 2rem 2rem;
+        background-color: #0091d8;
+        outline: none;
+        border:none;
+        border-radius: 3rem;
+        color:white;
+        font-size: 1rem;
+    
+    }
+    .tempForm input[type='submit']{
+        position: absolute;
+        top:2px;
+        right: 2px;
+        bottom:2px;
+        border:none;
+        background-color: #009ad8;
+        padding:0 2rem;
+        border-radius: 3rem;
+        color:white;
+        font-size: 1rem;
+     
+     }
+     .mainLayer .middleLayer p,
+.mainLayer .middleLayer .fa{
+    font-size: 5rem;
+    font-weight: 700;
+}
+.fa{
+    color:#009ad8;
+    margin: 0.5rem;
+
+}
+.sup{
+    font-size: 6rem;
+    margin-top: -2rem;
+}
+}

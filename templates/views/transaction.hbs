@@ -1,0 +1,62 @@
+   <!DOCTYPE html>
+<html lang="en">
+<head>
+	<title>Login V2</title>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	    <link rel="preconnect" href="https://fonts.gstatic.com">
+<link href="https://fonts.googleapis.com/css2?family=Piazzolla:ital,wght@0,400;0,600;1,400&display=swap" rel="stylesheet">
+      <!-- Latest compiled and minified CSS -->
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.10.0/css/all.min.css" integrity="sha512-PgQMlq+nqFLV4ylk1gwUOgm6CtIIXkKwaIHp/PAIWHzig/lKZSEGKEysh0TCVbHJXCLN7WetD8TFecIky75ZfQ==" crossorigin="anonymous" />
+
+<!--===============================================================================================-->	
+	<link rel="icon" type="image/png" href="images/icons/favicon.ico"/>
+<!--===============================================================================================-->
+	<link rel="stylesheet" type="text/css" href="vendor1/bootstrap/css/bootstrap.min.css">
+<!--===============================================================================================-->
+	<link rel="stylesheet" type="text/css" href="fonts/font-awesome-4.7.0/css/font-awesome.min.css">
+<!--===============================================================================================-->
+	<link rel="stylesheet" type="text/css" href="fonts/iconic/css/material-design-iconic-font.min.css">
+<!--===============================================================================================-->
+	<link rel="stylesheet" type="text/css" href="vendor/animate/animate.css">
+<!--===============================================================================================-->	
+	<link rel="stylesheet" type="text/css" href="vendor/css-hamburgers/hamburgers.min.css">
+<!--===============================================================================================-->
+	<link rel="stylesheet" type="text/css" href="vendor/animsition/css/animsition.min.css">
+<!--===============================================================================================-->
+	<link rel="stylesheet" type="text/css" href="vendor/select2/select2.min.css">
+<!--===============================================================================================-->	
+	<link rel="stylesheet" type="text/css" href="vendor/daterangepicker/daterangepicker.css">
+<!--===============================================================================================-->
+	<link rel="stylesheet" type="text/css" href="css1/util.css">
+	<link rel="stylesheet" type="text/css" href="css1/main.css">
+	
+    <link rel ='stylesheet' href= 'css2/style.css'>
+<!--===============================================================================================-->
+</head> {{>nav}}
+  
+        <div class = 'container-fluid main_header'  style="font-size:3rem;">
+       
+		    <p class="" >
+		    <ul class="list-group mt-5 ">
+			  <li class="list-group-item active">Account Details</li>
+			  <li class="list-group-item"><strong>Account Holder: </strong><pre>{{usermail.firstname}}  {{usermail.lastname}} </pre></li>
+			  <li class="list-group-item"><strong>Email: </strong> {{usermail.email}}</li>
+			  <li class="list-group-item"><strong>Available Balance: {{usermail.balance}}</strong></li>
+			</ul>
+		    <p class="mb-5" ">
+		    	<div class="btn-group btn-block btn-group-lg" role="group" aria-label="Actions">
+				  <a href="withdraw" type="button" class="btn btn-secondary">Withdraw</a>
+				  <a href="deposit"type="button" class="btn btn-secondary">Deposit</a>
+				  <a href="logout"type="button" class="btn btn-secondary">Logout</a>
+				</div>
+			 </p>
+        </div>
+
+
+</div>
+                
+                    
+    </div>
+ 
